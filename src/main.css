@@ -1,0 +1,8 @@
+body {
+  margin: 0;
+  background: linear-gradient(135deg, rgb(74, 20, 140) 0%, rgb(26, 35, 126) 50%, rgb(49, 27, 146) 100%);
+}
+.center{
+  width: 2.56%;
+  vertical-align: middle
+}
