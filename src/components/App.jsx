@@ -21,7 +21,7 @@ import PriceTablePage from "./Economy/PriceTablePage";
 import PlayersShop from "./Economy/PlayersShop"
 function App() {
   return (
-    <BrowserRouter /* basename="/servidor-magnatas-wiki" */>
+    <BrowserRouter basename="/MagnatasWiki">
      
        
 
