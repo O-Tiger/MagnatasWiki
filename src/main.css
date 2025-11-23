@@ -1,8 +1,103 @@
 body {
   margin: 0;
-  background: linear-gradient(135deg, rgb(74, 20, 140) 0%, rgb(26, 35, 126) 50%, rgb(49, 27, 146) 100%);
+  /* Fundo escuro do site oficial */
+  background: #0a0a0a;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.center {
+  width: 2.56%;
+  vertical-align: middle;
+}
+
+/* Variáveis CSS com a paleta REAL do site oficial */
+:root {
+  /* Cores principais */
+  --bg-dark: #0a0a0a;
+  --bg-dark-alt: #1a1a1a;
+  --card-bg: #2a2a2a;
+  --card-bg-hover: #333333;
+  
+  /* Amarelo/Dourado do site */
+  --primary-yellow: #FDB813;
+  --accent-yellow: #ffc107;
+  --text-yellow: #FFD700;
+  
+  /* Cinzas */
+  --text-primary: #ffffff;
+  --text-secondary: #b0b0b0;
+  --text-muted: #808080;
+  
+  /* Bordas e overlays */
+  --border-color: rgba(255, 255, 255, 0.1);
+  --overlay-dark: rgba(0, 0, 0, 0.5);
+  --card-shadow: rgba(0, 0, 0, 0.3);
 }
 .center{
   width: 2.56%;
   vertical-align: middle
+}
+card:hover {
+      background: "#333333" , 
+      transform: "translateY(-5px)",
+      boxShadow: "0 10px 30px rgba(0, 0, 0, 0.5)",
+} 
+ listItem:hover {
+   color: "#FDB813",
+ }
+ 
+ tabButton:hover{
+   background: "#333333",
+ }
+
+a{
+  text-decoration: none;
+}
+ruleCard:hover {
+   background: "#333333",
+   transform: "translateY(-2px)",
+   border-color: "#FDB813"
+  }
+commandCard:hover {
+   background: '#333333',
+   transform: translateY(-3px),
+   border-color: '#FDB813',
+ }
+
+ filterBtn:hover{
+   background: "#333333",
+   border-color: "rgba(255, 255, 255, 0.3)",
+}commandCard:hover {
+   background: "#333333",
+   border-color: "#FDB813"
+}
+
+downloadButton:hover {
+   background: "#ffc107",
+   transform: translateY(-2px),
+   box-shadow: 0 6px 20px rgba(253, 184, 19, 0.6),
+ }
+tableRow:hover {
+  background: "#2a2a2a",
+ }
+ stepCard:hover {
+  background: "#333333",
+  transform: translateY(-3px),
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5),
+   border-color: "#FDB813",
+}
+
+launcherCard:hover {
+  background: "#333333",
+  border-color: "#FDB813",
+  transform: translateY(-5px),
+}
+
+navBtn:hover {
+  background: "#333333",
+  border-color: "rgba(255, 255, 255, 0.5)",
 }

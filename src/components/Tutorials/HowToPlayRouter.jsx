@@ -221,8 +221,7 @@ const styles = {
     padding: "40px 20px",
     maxWidth: "1200px",
     margin: "0 auto",
-    background:
-      " linear-gradient(135deg, rgb(74, 20, 140) 0%, rgb(26, 35, 126) 50%, rgb(49, 27, 146) 100%);",
+    background: "#0a0a0a", // Fundo escuro oficial
     minHeight: "100vh",
     color: "#fff",
   },
@@ -230,10 +229,8 @@ const styles = {
     textAlign: "center",
     marginBottom: "40px",
     padding: "40px",
-    background:
-      "linear-gradient(135deg, rgb(74, 20, 140) 0%, rgb(26, 35, 126) 50%, rgb(49, 27, 146) 100%);",
+    background: "#1a1a1a", // Cinza escuro
     borderRadius: "15px",
-    backdropFilter: "blur(10px)",
   },
   iconLarge: {
     fontSize: "4em",
@@ -242,14 +239,16 @@ const styles = {
   title: {
     fontSize: "2.5em",
     marginBottom: "10px",
+    color: "#FDB813", // Amarelo oficial
+    textShadow: "0 0 20px rgba(253, 184, 19, 0.5)",
   },
   subtitle: {
     fontSize: "1.2em",
     opacity: 0.9,
   },
   warningBox: {
-    background: "rgba(255, 193, 7, 0.2)",
-    border: "2px solid #FFC107",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "12px",
     padding: "25px",
     marginBottom: "30px",
@@ -263,14 +262,15 @@ const styles = {
   warningTitle: {
     marginBottom: "10px",
     fontSize: "1.3em",
+    color: "#FDB813", // Amarelo
   },
   warningText: {
     lineHeight: "1.6",
     fontSize: "1em",
   },
   cleanInstallSection: {
-    background: "rgba(244, 67, 54, 0.2)",
-    border: "2px solid #f44336",
+    background: "rgba(253, 184, 19, 0.15)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "12px",
     padding: "25px",
     marginBottom: "30px",
@@ -278,14 +278,16 @@ const styles = {
   sectionTitle: {
     fontSize: "1.5em",
     marginBottom: "20px",
+    color: "#FDB813", // Amarelo
   },
   stepsList: {
     lineHeight: "2",
     paddingLeft: "25px",
+    color: "#b0b0b0",
   },
   infoBox: {
-    background: "rgba(33, 150, 243, 0.2)",
-    border: "2px solid #2196F3",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "12px",
     padding: "25px",
     marginBottom: "30px",
@@ -304,7 +306,7 @@ const styles = {
     gap: "20px",
   },
   launcherCard: {
-    background: "rgba(255, 255, 255, 0.1)",
+    background: "#2a2a2a", // Cinza médio
     borderRadius: "12px",
     padding: "25px",
     cursor: "pointer",
@@ -331,7 +333,7 @@ const styles = {
   },
   comingSoon: {
     fontSize: "1.1em",
-    color: "#FFC107",
+    color: "#FDB813", // Amarelo
     marginBottom: "10px",
   },
   helpText: {
@@ -342,24 +344,24 @@ const styles = {
     alignItems: "center",
     padding: "12px 25px",
     borderRadius: "8px",
-    textDecoration:"none",
+    textDecoration: "none",
     border: "none",
     cursor: "pointer",
     fontSize: "22px",
     fontWeight: "520",
     transition: "0.3s",
-    background: "rgba(255, 255, 255, 0.09)",
-    color: "rgb(255, 255, 255)",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     transform: "scale(1)",
-    color: "rgb(255, 255, 255)",
-    boxShadow: " rgba(123, 31, 162, 0.4) 0px 4px 15px",
+    boxShadow: "0px 4px 15px rgba(253, 184, 19, 0.4)",
     width: "fit-content",
     marginBottom: "0.5rem",
   },
+
   // Mobile specific
   highlightBox: {
-    background: "rgba(33, 150, 243, 0.2)",
-    border: "2px solid #2196F3",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "12px",
     padding: "25px",
     marginBottom: "30px",
@@ -367,16 +369,17 @@ const styles = {
   highlightTitle: {
     fontSize: "1.3em",
     marginBottom: "15px",
+    color: "#FDB813", // Amarelo
   },
   rankingNote: {
-    background: "rgba(255, 255, 255, 0.1)",
+    background: "#2a2a2a", // Cinza médio
     padding: "15px",
     borderRadius: "8px",
     marginTop: "15px",
     lineHeight: "1.6",
   },
   introSection: {
-    background: "rgba(255, 255, 255, 0.1)",
+    background: "#1a1a1a", // Cinza escuro
     borderRadius: "12px",
     padding: "25px",
     marginBottom: "30px",
@@ -386,7 +389,7 @@ const styles = {
     marginBottom: "15px",
   },
   link: {
-    color: "#64B5F6",
+    color: "#FDB813", // Amarelo
     textDecoration: "underline",
   },
   mobileGrid: {
@@ -395,7 +398,7 @@ const styles = {
     gap: "25px",
   },
   mobileLauncherCard: {
-    background: "rgba(255, 255, 255, 0.1)",
+    background: "#2a2a2a", // Cinza médio
     borderRadius: "12px",
     padding: "25px",
     cursor: "pointer",
@@ -404,14 +407,15 @@ const styles = {
     position: "relative",
   },
   highlightCard: {
-    border: "2px solid #4CAF50",
-    background: "rgba(76, 175, 80, 0.15)",
+    border: "2px solid #FDB813",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
   },
   launcherRank: {
     position: "absolute",
     top: "10px",
     right: "10px",
-    background: "rgba(255, 255, 255, 0.2)",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     padding: "5px 12px",
     borderRadius: "20px",
     fontSize: "0.9em",
@@ -424,11 +428,29 @@ const styles = {
   },
   originalBadge: {
     display: "inline-block",
-    background: "rgba(255, 152, 0, 0.3)",
+    background: "rgba(253, 184, 19, 0.3)", // Amarelo transparente
     padding: "5px 12px",
     borderRadius: "20px",
     fontSize: "0.85em",
     marginBottom: "10px",
+  },
+
+  // Navigation buttons
+  navBtn: {
+    padding: "12px 30px",
+    border: "2px solid rgba(255, 255, 255, 0.3)",
+    background: "#2a2a2a", // Cinza médio
+    color: "#fff",
+    borderRadius: "8px",
+    cursor: "pointer",
+    fontSize: "1.1em",
+    fontWeight: "bold",
+    transition: "all 0.3s",
+  },
+  navBtnActive: {
+    background: "#FDB813", // Amarelo quando ativo
+    borderColor: "#FDB813",
+    color: "#000", // Texto preto quando ativo
   },
 };
 
@@ -442,7 +464,7 @@ const HowToPlayRouter = () => {
       <div
         style={{
           display: "flex",
-          justifyContent: "center"
+          justifyContent: "center",
         }}
       >
         <Link to="/" style={styles.button}>

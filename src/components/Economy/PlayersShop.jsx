@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 export default function LojaJogadores() {
   return (
     <>
       <div style={styles.container}>
-        
         <Link to="/" style={styles.button}>
           Início
         </Link>
@@ -37,17 +37,19 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-
     margin: "2em auto",
     maxWidth: "900px",
     fontFamily:
       '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
-    color: "rgb(55, 53, 47)",
+    color: "#fff", // Texto branco
     lineHeight: "1.5",
     padding: "0 20px",
+    background: "#0a0a0a", // Fundo escuro oficial
+    minHeight: "100vh",
   },
   header: {
     marginBottom: "1.5em",
+    textAlign: "center",
   },
   headerIcon: {
     fontSize: "3rem",
@@ -68,12 +70,16 @@ const styles = {
     marginBottom: "0.75em",
     letterSpacing: "-0.01em",
     lineHeight: "1.2",
+    color: "#FDB813", // Amarelo oficial
+    textShadow: "0 0 20px rgba(253, 184, 19, 0.5)",
   },
   body: {
     marginTop: "2em",
+    width: "100%",
   },
   callout: {
-    background: "rgba(243, 235, 249, 1)",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "10px",
     padding: "1rem",
     display: "flex",
@@ -89,7 +95,7 @@ const styles = {
   },
   calloutText: {
     margin: "0",
-    color: "rgba(154, 107, 180, 1)",
+    color: "#FDB813", // Amarelo
   },
   button: {
     display: "flex",
@@ -102,12 +108,12 @@ const styles = {
     fontSize: "18px",
     fontWeight: "500",
     transition: "0.3s",
-    background: "rgba(255, 255, 255, 0.09)",
-    color: "rgb(255, 255, 255)",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     transform: "scale(1)",
-    color: "rgb(255, 255, 255)",
-    boxShadow: " rgba(123, 31, 162, 0.4) 0px 4px 15px",
+    boxShadow: "0px 4px 15px rgba(253, 184, 19, 0.4)",
     width: "fit-content",
-    marginBottom: "2rem"
+    marginBottom: "2rem",
+    textDecoration: "none",
   },
 };

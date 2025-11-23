@@ -30,8 +30,7 @@ const WikiServidorMagnatas = () => {
   const styles = {
     container: {
       minHeight: "100vh",
-      background:
-        "linear-gradient(135deg, #4a148c 0%, #1a237e 50%, #311b92 100%)",
+      background: "#0a0a0a", // Fundo escuro do site oficial
       color: "#fff",
       padding: "20px",
       fontFamily: "system-ui, -apple-system, sans-serif",
@@ -49,25 +48,23 @@ const WikiServidorMagnatas = () => {
       fontSize: "3rem",
       fontWeight: "bold",
       marginBottom: "10px",
-      background: "linear-gradient(to right, #ffd54f, #ff9800)",
-      WebkitBackgroundClip: "text",
-      WebkitTextFillColor: "transparent",
-      backgroundClip: "text",
+      color: "#FFD700", // Amarelo dourado para títulos
+      textShadow: "0 0 20px rgba(255, 215, 0, 0.5)",
     },
     subtitle: {
       fontSize: "1.25rem",
-      color: "#ce93d8",
+      color: "#b0b0b0", // Cinza claro
     },
     nav: {
-      justifyContent:'center',
+      justifyContent: "center",
       display: "flex",
       flexWrap: "wrap",
       gap: "10px",
       marginBottom: "30px",
-      background: "rgba(0,0,0,0.3)",
+      background: "#1a1a1a", // Cinza escuro
       padding: "15px",
       borderRadius: "10px",
-      backdropFilter: "blur(10px)",
+      border: "1px solid rgba(255, 255, 255, 0.1)",
     },
     tabButton: (active) => ({
       display: "flex",
@@ -80,27 +77,90 @@ const WikiServidorMagnatas = () => {
       fontSize: "14px",
       fontWeight: "500",
       transition: "all 0.3s",
-      background: active ? "#7b1fa2" : "rgba(255,255,255,0.1)",
-      color: "#fff",
+      background: active ? "#FDB813" : "#2a2a2a", // Amarelo quando ativo
+      color: active ? "#000" : "#fff", // Texto preto quando ativo
       transform: active ? "scale(1.05)" : "scale(1)",
-      boxShadow: active ? "0 4px 15px rgba(123,31,162,0.4)" : "none",
+      boxShadow: active ? "0 4px 15px rgba(253, 184, 19, 0.4)" : "none",
     }),
     content: {
-      background: "rgba(0,0,0,0.4)",
-      backdropFilter: "blur(10px)",
+      background: "#1a1a1a",
       borderRadius: "15px",
       padding: "30px",
-      boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
+      boxShadow: "0 20px 60px rgba(0, 0, 0, 0.5)",
+      border: "1px solid rgba(255, 255, 255, 0.1)",
     },
     footer: {
       textAlign: "center",
       marginTop: "40px",
-      color: "#ce93d8",
+      color: "#b0b0b0",
     },
     link: {
-      color: "#ffd54f",
+      color: "#FDB813", // Amarelo para links
       textDecoration: "underline",
     },
+
+    // Estilos para HomeContent
+    callout: {
+      background: "#2a2a2a",
+      border: "2px solid #FDB813",
+      borderLeft: "4px solid #FDB813",
+      padding: "20px",
+      borderRadius: "8px",
+      marginBottom: "30px",
+    },
+    grid: {
+      display: "grid",
+      gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+      gap: "20px",
+      marginBottom: "30px",
+    },
+    card: () => ({
+      background: "#2a2a2a",
+      padding: "20px",
+      borderRadius: "10px",
+      border: "1px solid rgba(255, 255, 255, 0.1)",
+      transition: "all 0.3s",
+    }),
+    cardTitle: {
+      fontSize: "1.25rem",
+      fontWeight: "bold",
+      marginBottom: "15px",
+      display: "flex",
+      alignItems: "center",
+      gap: "10px",
+      color: "#FFD700", // Amarelo dourado
+    },
+    list: {
+      listStyle: "none",
+      padding: 0,
+      margin: 0,
+    },
+    listItem: {
+      padding: "8px 0",
+      color: "#b0b0b0",
+      transition: "color 0.3s",
+    },
+
+    // Estilos para outras seções
+    commandItem: {
+      background: "#2a2a2a",
+      padding: "15px",
+      borderRadius: "8px",
+      marginBottom: "10px",
+      transition: "all 0.3s",
+      border: "1px solid rgba(255, 255, 255, 0.1)",
+    },
+    code: {
+      color: "#FDB813",
+      fontFamily: "monospace",
+      fontSize: "14px",
+    },
+    desc: {
+      color: "#b0b0b0",
+      fontSize: "13px",
+      marginTop: "5px",
+    },
+    
   };
 
   return (
@@ -147,7 +207,7 @@ const WikiServidorMagnatas = () => {
         </div>
 
         <footer style={styles.footer}>
-          <p >
+          <p>
             🌐 Loja:{" "}
             <a href="https://servidormagnatas.com.br/" style={styles.link}>
               servidormagnatas.com.br
@@ -175,7 +235,7 @@ const WikiServidorMagnatas = () => {
               @ServidrMagnatas
             </a>
           </p>
-          <p >
+          <p>
             <img
               class="center"
               src="https://cdn-icons-png.flaticon.com/128/20/20837.png"
@@ -189,7 +249,7 @@ const WikiServidorMagnatas = () => {
               servidormagnatas
             </a>
           </p>
-          <p >
+          <p>
             <img
               class="center"
               src="https://cdn-icons-png.flaticon.com/128/3670/3670209.png"
@@ -203,7 +263,7 @@ const WikiServidorMagnatas = () => {
               @GnomoMuitoLoco
             </a>
           </p>
-          <p >
+          <p>
             <img
               class="center"
               src="https://cdn-icons-png.flaticon.com/128/3046/3046121.png"
@@ -217,7 +277,7 @@ const WikiServidorMagnatas = () => {
               @servidormagnatas
             </a>
           </p>
-          <p >
+          <p>
             <img
               class="center"
               src="https://cdn-icons-png.flaticon.com/128/15707/15707749.png"
@@ -294,7 +354,7 @@ const HomeContent = () => {
       </div>
 
       <div style={styles.grid}>
-        <div style={styles.card("38, 166, 154")}>
+        <div style={styles.card("176, 143, 62")}>
           <h3 style={styles.cardTitle}>
             <Monitor size={24} /> 📱 Tutoriais
           </h3>
@@ -312,7 +372,7 @@ const HomeContent = () => {
         </div>
 
         <div style={styles.grid}>
-          <div style={styles.card("38, 166, 154")}>
+          <div style={styles.card("163, 16, 16")}>
             <h3 style={styles.cardTitle}>
               <Book size={24} /> 📑 Regras e Conduta
             </h3>
@@ -347,7 +407,7 @@ const HomeContent = () => {
           </ul>
         </div>
         <div style={styles.grid}>
-          <div style={styles.card("38, 166, 154")}>
+          <div style={styles.card("56, 128, 81")}>
             <h3 style={styles.cardTitle}>
               <Book size={24} /> 📑 Economia
             </h3>

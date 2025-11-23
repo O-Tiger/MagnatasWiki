@@ -284,7 +284,7 @@ const BannedItemsPage = () => {
 const styles = {
   body: {
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-    background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
+    background: "#0a0a0a", // Fundo escuro oficial
     color: "#fff",
     minHeight: "100vh",
     padding: "20px",
@@ -297,19 +297,18 @@ const styles = {
     textAlign: "center",
     marginBottom: "40px",
     padding: "30px",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#1a1a1a", // Cinza escuro
     borderRadius: "15px",
-    backdropFilter: "blur(10px)",
     border: "1px solid rgba(255, 255, 255, 0.1)",
   },
   h1: {
     fontSize: "2.5em",
     marginBottom: "10px",
-    color: "#ff4757",
-    textShadow: "0 0 20px rgba(255, 71, 87, 0.5)",
+    color: "#FDB813", // Amarelo oficial
+    textShadow: "0 0 20px rgba(253, 184, 19, 0.5)",
   },
   subtitle: {
-    color: "#a8a8a8",
+    color: "#b0b0b0", // Cinza claro
     fontSize: "1.1em",
   },
   viewToggle: {
@@ -321,7 +320,7 @@ const styles = {
   toggleBtn: {
     padding: "10px 25px",
     border: "2px solid rgba(255, 255, 255, 0.2)",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#2a2a2a", // Cinza médio
     color: "#fff",
     borderRadius: "8px",
     cursor: "pointer",
@@ -329,8 +328,9 @@ const styles = {
     fontSize: "1em",
   },
   toggleBtnActive: {
-    background: "#ff4757",
-    borderColor: "#ff4757",
+    background: "#FDB813", // Amarelo quando ativo
+    borderColor: "#FDB813",
+    color: "#000", // Texto preto quando ativo
   },
   searchBox: {
     marginBottom: "30px",
@@ -342,7 +342,7 @@ const styles = {
     fontSize: "1em",
     border: "2px solid rgba(255, 255, 255, 0.1)",
     borderRadius: "10px",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#2a2a2a", // Cinza médio
     color: "#fff",
     transition: "all 0.3s",
     boxSizing: "border-box",
@@ -352,14 +352,14 @@ const styles = {
     marginBottom: "40px",
   },
   modHeader: {
-    background: "rgba(255, 255, 255, 0.08)",
+    background: "#2a2a2a",
     padding: "15px 20px",
     borderRadius: "10px",
     marginBottom: "20px",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    borderLeft: "4px solid #ff4757",
+    borderLeft: "4px solid #FDB813", // Borda amarela
   },
   modName: {
     fontSize: "1.3em",
@@ -367,7 +367,8 @@ const styles = {
     color: "#fff",
   },
   modCount: {
-    background: "#ff4757",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     padding: "5px 15px",
     borderRadius: "20px",
     fontWeight: "bold",
@@ -382,12 +383,13 @@ const styles = {
   stats: {
     textAlign: "center",
     padding: "20px",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#1a1a1a",
     borderRadius: "10px",
     marginTop: "20px",
+    border: "1px solid rgba(255, 255, 255, 0.1)",
   },
   statsSpan: {
-    color: "#ff4757",
+    color: "#FDB813", // Amarelo
     fontWeight: "bold",
     fontSize: "1.2em",
   },
@@ -402,14 +404,14 @@ const styles = {
     fontSize: "22px",
     fontWeight: "520",
     transition: "0.3s",
-    background: "rgba(255, 255, 255, 0.09)",
-    color: "rgb(255, 255, 255)",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     transform: "scale(1)",
-    color: "rgb(255, 255, 255)",
-    boxShadow: " rgba(123, 31, 162, 0.4) 0px 4px 15px",
+    boxShadow: "0px 4px 15px rgba(253, 184, 19, 0.4)",
     width: "fit-content",
     marginBottom: "0.5rem",
   },
 };
+
 
 export default BannedItemsPage;

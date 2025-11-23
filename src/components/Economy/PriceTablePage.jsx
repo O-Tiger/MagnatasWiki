@@ -236,7 +236,7 @@ const styles = {
     padding: "40px 20px",
     maxWidth: "1400px",
     margin: "0 auto",
-    background: "linear-gradient(135deg, #1e3c72 0%, #2a5298 100%)",
+    background: "#0a0a0a", // Fundo escuro oficial
     minHeight: "100vh",
     color: "#fff",
   },
@@ -244,9 +244,8 @@ const styles = {
     textAlign: "center",
     marginBottom: "40px",
     padding: "40px",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#1a1a1a", // Cinza escuro
     borderRadius: "15px",
-    backdropFilter: "blur(10px)",
   },
   headerIcon: {
     fontSize: "4em",
@@ -255,16 +254,16 @@ const styles = {
   title: {
     fontSize: "2.8em",
     marginBottom: "10px",
-    color: "#FFD700",
+    color: "#FFD700", // Dourado para títulos especiais
     textShadow: "0 0 20px rgba(255, 215, 0, 0.5)",
   },
   subtitle: {
     fontSize: "1.2em",
-    color: "#ecf0f1",
+    color: "#b0b0b0", // Cinza claro
   },
   infoBox: {
-    background: "rgba(52, 152, 219, 0.2)",
-    border: "2px solid #3498db",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "12px",
     padding: "20px",
     marginBottom: "30px",
@@ -292,7 +291,7 @@ const styles = {
     position: "relative",
     display: "flex",
     alignItems: "center",
-    background: "rgba(255, 255, 255, 0.1)",
+    background: "#2a2a2a", // Cinza médio
     borderRadius: "10px",
     padding: "0 15px",
   },
@@ -322,7 +321,7 @@ const styles = {
     padding: "12px 20px",
     borderRadius: "8px",
     border: "2px solid rgba(255, 255, 255, 0.2)",
-    background: "rgba(255, 255, 255, 0.1)",
+    background: "#2a2a2a", // Cinza médio
     color: "#fff",
     fontSize: "1em",
     cursor: "pointer",
@@ -334,7 +333,7 @@ const styles = {
     flexWrap: "wrap",
   },
   statItem: {
-    background: "rgba(255, 255, 255, 0.1)",
+    background: "#2a2a2a", // Cinza médio
     padding: "15px 25px",
     borderRadius: "10px",
     display: "flex",
@@ -349,7 +348,7 @@ const styles = {
   },
   tableContainer: {
     overflowX: "auto",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#1a1a1a", // Cinza escuro
     borderRadius: "12px",
     marginBottom: "30px",
   },
@@ -358,15 +357,15 @@ const styles = {
     borderCollapse: "collapse",
   },
   tableHeaderRow: {
-    background: "rgba(255, 215, 0, 0.2)",
-    borderBottom: "2px solid #FFD700",
+    background: "rgba(253, 184, 19, 0.2)", // Amarelo transparente
+    borderBottom: "2px solid #FDB813",
   },
   tableHeader: {
     padding: "20px",
     textAlign: "left",
     fontWeight: "bold",
     fontSize: "1.1em",
-    color: "#FFD700",
+    color: "#FDB813", // Amarelo
   },
   tableRow: {
     borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
@@ -380,24 +379,24 @@ const styles = {
   },
   itemName: {
     fontSize: "1em",
-    color: "#ecf0f1",
+    color: "#b0b0b0", // Cinza claro
   },
   priceTag: {
-    background: "rgba(255, 215, 0, 0.2)",
+    background: "rgba(253, 184, 19, 0.2)", // Amarelo transparente
     padding: "5px 12px",
     borderRadius: "20px",
-    color: "#FFD700",
+    color: "#FDB813", // Amarelo
     fontWeight: "bold",
     display: "inline-block",
   },
   quantity: {
-    color: "#bdc3c7",
+    color: "#808080", // Cinza apagado
     fontSize: "0.95em",
   },
   emptyState: {
     textAlign: "center",
     padding: "60px 20px",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#1a1a1a",
     borderRadius: "12px",
     marginBottom: "30px",
   },
@@ -407,13 +406,13 @@ const styles = {
   },
   emptyText: {
     fontSize: "1.2em",
-    color: "#bdc3c7",
+    color: "#b0b0b0",
   },
   footer: {
     padding: "30px",
-    background: "rgba(255, 215, 0, 0.15)",
+    background: "rgba(253, 184, 19, 0.15)", // Amarelo transparente
     borderRadius: "12px",
-    border: "2px solid #FFD700",
+    border: "2px solid #FDB813",
     textAlign: "center",
   },
   footerIcon: {
@@ -435,11 +434,10 @@ const styles = {
     fontSize: "22px",
     fontWeight: "520",
     transition: "0.3s",
-    background: "rgba(255, 255, 255, 0.09)",
-    color: "rgb(255, 255, 255)",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     transform: "scale(1)",
-    color: "rgb(255, 255, 255)",
-    boxShadow: " rgba(123, 31, 162, 0.4) 0px 4px 15px",
+    boxShadow: "0px 4px 15px rgba(253, 184, 19, 0.4)",
     width: "fit-content",
     marginBottom: "0.5rem",
   },

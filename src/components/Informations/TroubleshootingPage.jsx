@@ -263,8 +263,7 @@ const styles = {
     padding: "40px 20px",
     maxWidth: "1200px",
     margin: "0 auto",
-    background:
-      "linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%)",
+    background: "#0a0a0a", // Fundo escuro oficial
     minHeight: "100vh",
     color: "#fff",
   },
@@ -272,9 +271,8 @@ const styles = {
     textAlign: "center",
     marginBottom: "40px",
     padding: "40px",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#1a1a1a", // Cinza escuro
     borderRadius: "15px",
-    backdropFilter: "blur(10px)",
   },
   headerIcon: {
     fontSize: "4em",
@@ -283,16 +281,16 @@ const styles = {
   title: {
     fontSize: "2.8em",
     marginBottom: "10px",
-    color: "#FFA726",
-    textShadow: "0 0 20px rgba(255, 167, 38, 0.5)",
+    color: "#FDB813", // Amarelo oficial
+    textShadow: "0 0 20px rgba(253, 184, 19, 0.5)",
   },
   subtitle: {
     fontSize: "1.2em",
-    color: "#ecf0f1",
+    color: "#b0b0b0", // Cinza claro
   },
   warningBox: {
-    background: "rgba(255, 152, 0, 0.2)",
-    border: "2px solid #FF9800",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "12px",
     padding: "25px",
     marginBottom: "40px",
@@ -310,7 +308,7 @@ const styles = {
   },
   section: {
     marginBottom: "25px",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#1a1a1a",
     borderRadius: "12px",
     overflow: "hidden",
     border: "1px solid rgba(255, 255, 255, 0.1)",
@@ -321,7 +319,7 @@ const styles = {
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
-    background: "rgba(255, 255, 255, 0.03)",
+    background: "#2a2a2a", // Cinza médio
     transition: "background 0.3s",
   },
   sectionTitleWrapper: {
@@ -336,17 +334,17 @@ const styles = {
   sectionTitle: {
     margin: 0,
     fontSize: "1.5em",
-    color: "#FFA726",
+    color: "#FDB813", // Amarelo
   },
   expandIcon: {
     fontSize: "1.5em",
-    color: "#FFA726",
+    color: "#FDB813", // Amarelo
   },
   sectionContent: {
     padding: "25px",
   },
   contentBox: {
-    color: "#ecf0f1",
+    color: "#b0b0b0", // Cinza claro
   },
   paragraph: {
     lineHeight: "1.8",
@@ -354,8 +352,8 @@ const styles = {
     fontSize: "1.05em",
   },
   linkBox: {
-    background: "rgba(33, 150, 243, 0.2)",
-    border: "2px solid #2196F3",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "8px",
     padding: "15px 20px",
     display: "flex",
@@ -367,21 +365,21 @@ const styles = {
     fontSize: "1.5em",
   },
   highlightBox: {
-    background: "rgba(76, 175, 80, 0.15)",
-    border: "2px solid #4CAF50",
+    background: "rgba(253, 184, 19, 0.15)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "10px",
     padding: "25px",
     marginTop: "20px",
   },
   highlightTitle: {
-    color: "#4CAF50",
+    color: "#FDB813", // Amarelo
     marginBottom: "15px",
     fontSize: "1.3em",
   },
   downloadButton: {
     display: "inline-block",
-    background: "#4CAF50",
-    color: "white",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     padding: "12px 30px",
     borderRadius: "8px",
     textDecoration: "none",
@@ -390,7 +388,7 @@ const styles = {
     transition: "all 0.3s",
   },
   subsectionTitle: {
-    color: "#FFA726",
+    color: "#FDB813", // Amarelo
     marginBottom: "15px",
     marginTop: "25px",
     fontSize: "1.4em",
@@ -405,8 +403,8 @@ const styles = {
     alignItems: "flex-start",
   },
   stepNumber: {
-    background: "#FFA726",
-    color: "#000",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     width: "45px",
     height: "45px",
     borderRadius: "50%",
@@ -422,27 +420,27 @@ const styles = {
   },
   stepTitle: {
     marginBottom: "10px",
-    color: "#FFA726",
+    color: "#FDB813", // Amarelo
   },
   list: {
     paddingLeft: "25px",
     lineHeight: "2",
   },
   inlineCode: {
-    background: "rgba(255, 255, 255, 0.1)",
+    background: "rgba(253, 184, 19, 0.2)", // Amarelo transparente
     padding: "3px 8px",
     borderRadius: "4px",
-    color: "#FFA726",
+    color: "#FDB813", // Amarelo
     fontFamily: "monospace",
   },
   codeBlock: {
-    background: "rgba(0, 0, 0, 0.3)",
+    background: "#2a2a2a", // Cinza médio
     border: "1px solid rgba(255, 255, 255, 0.1)",
     borderRadius: "8px",
     padding: "20px",
     marginTop: "15px",
     fontFamily: "monospace",
-    color: "#4CAF50",
+    color: "#FDB813", // Amarelo
   },
   preCode: {
     margin: 0,
@@ -459,17 +457,18 @@ const styles = {
     marginTop: "20px",
   },
   commandCard: {
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#2a2a2a", // Cinza médio
     border: "1px solid rgba(255, 255, 255, 0.1)",
     borderRadius: "8px",
     padding: "15px",
+    transition: "all 0.3s",
   },
   commandCode: {
     display: "block",
-    background: "rgba(0, 0, 0, 0.3)",
+    background: "rgba(253, 184, 19, 0.2)", // Amarelo transparente
     padding: "10px",
     borderRadius: "5px",
-    color: "#FFA726",
+    color: "#FDB813", // Amarelo
     fontFamily: "monospace",
     marginBottom: "10px",
     fontSize: "0.95em",
@@ -477,18 +476,18 @@ const styles = {
   commandDesc: {
     margin: 0,
     fontSize: "0.95em",
-    color: "#bdc3c7",
+    color: "#b0b0b0",
   },
   sequenceBox: {
-    background: "rgba(33, 150, 243, 0.1)",
-    border: "2px solid #2196F3",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "10px",
     padding: "25px",
     marginTop: "30px",
   },
   noteBox: {
-    background: "rgba(255, 193, 7, 0.2)",
-    border: "1px solid #FFC107",
+    background: "rgba(253, 184, 19, 0.2)", // Amarelo transparente
+    border: "1px solid #FDB813",
     borderRadius: "8px",
     padding: "15px",
     marginTop: "20px",
@@ -500,8 +499,8 @@ const styles = {
     fontSize: "1.5em",
   },
   alertBox: {
-    background: "rgba(244, 67, 54, 0.15)",
-    border: "2px solid #f44336",
+    background: "rgba(253, 184, 19, 0.15)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "10px",
     padding: "20px",
     marginTop: "20px",
@@ -519,9 +518,9 @@ const styles = {
   footer: {
     marginTop: "50px",
     padding: "30px",
-    background: "rgba(255, 167, 38, 0.15)",
+    background: "rgba(253, 184, 19, 0.15)", // Amarelo transparente
     borderRadius: "12px",
-    border: "2px solid #FFA726",
+    border: "2px solid #FDB813",
     textAlign: "center",
   },
   footerIcon: {
@@ -543,11 +542,10 @@ const styles = {
     fontSize: "22px",
     fontWeight: "520",
     transition: "0.3s",
-    background: "rgba(255, 255, 255, 0.09)",
-    color: "rgb(255, 255, 255)",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     transform: "scale(1)",
-    color: "rgb(255, 255, 255)",
-    boxShadow: " rgba(123, 31, 162, 0.4) 0px 4px 15px",
+    boxShadow: "0px 4px 15px rgba(253, 184, 19, 0.4)",
     width: "fit-content",
     marginBottom: "0.5rem",
   },

@@ -237,7 +237,7 @@ const styles = {
     padding: "40px 20px",
     maxWidth: "1400px",
     margin: "0 auto",
-    background: "linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)",
+    background: "#0a0a0a", // Fundo escuro oficial
     minHeight: "100vh",
     color: "#fff",
   },
@@ -245,19 +245,18 @@ const styles = {
     textAlign: "center",
     marginBottom: "40px",
     padding: "40px",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#1a1a1a", // Cinza escuro
     borderRadius: "15px",
-    backdropFilter: "blur(10px)",
     border: "1px solid rgba(255, 255, 255, 0.1)",
   },
   title: {
     fontSize: "2.5em",
     marginBottom: "10px",
-    color: "#4CAF50",
-    textShadow: "0 0 20px rgba(76, 175, 80, 0.5)",
+    color: "#FDB813", // Amarelo oficial
+    textShadow: "0 0 20px rgba(253, 184, 19, 0.5)",
   },
   subtitle: {
-    color: "#a8a8a8",
+    color: "#b0b0b0", // Cinza claro
     fontSize: "1.1em",
   },
   filterSection: {
@@ -270,7 +269,7 @@ const styles = {
   filterBtn: {
     padding: "12px 30px",
     border: "2px solid rgba(255, 255, 255, 0.2)",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#2a2a2a", // Cinza médio
     color: "#fff",
     borderRadius: "8px",
     cursor: "pointer",
@@ -279,8 +278,9 @@ const styles = {
     fontWeight: "600",
   },
   filterBtnActive: {
-    background: "#4CAF50",
-    borderColor: "#4CAF50",
+    background: "#FDB813", // Amarelo quando ativo
+    borderColor: "#FDB813",
+    color: "#000", // Texto preto quando ativo
   },
   commandsGrid: {
     display: "grid",
@@ -289,56 +289,55 @@ const styles = {
     marginBottom: "40px",
   },
   commandCard: {
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#2a2a2a", // Cinza médio
     borderRadius: "12px",
     padding: "20px",
     border: "1px solid rgba(255, 255, 255, 0.1)",
-    backdropFilter: "blur(10px)",
     transition: "all 0.3s",
   },
   commandHeader: {
     marginBottom: "10px",
   },
   commandCode: {
-    background: "rgba(76, 175, 80, 0.2)",
+    background: "rgba(253, 184, 19, 0.2)", // Amarelo transparente
     padding: "8px 12px",
     borderRadius: "6px",
-    color: "#4CAF50",
+    color: "#FDB813", // Amarelo
     fontSize: "0.95em",
     fontFamily: "monospace",
     display: "inline-block",
   },
   aliases: {
     fontSize: "0.85em",
-    color: "#888",
+    color: "#808080", // Cinza apagado
     marginBottom: "10px",
     fontFamily: "monospace",
   },
   commandDesc: {
-    color: "#ccc",
+    color: "#b0b0b0", // Cinza claro
     lineHeight: "1.6",
   },
   infoBox: {
-    background: "rgba(76, 175, 80, 0.1)",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
     padding: "30px",
     borderRadius: "12px",
-    border: "1px solid rgba(76, 175, 80, 0.3)",
+    border: "1px solid rgba(253, 184, 19, 0.3)",
     marginBottom: "30px",
   },
   infoTitle: {
-    color: "#4CAF50",
+    color: "#FDB813", // Amarelo
     marginBottom: "15px",
     fontSize: "1.5em",
   },
   tipsList: {
-    color: "#ccc",
+    color: "#b0b0b0",
     lineHeight: "2",
     paddingLeft: "20px",
   },
   footer: {
     textAlign: "center",
     padding: "20px",
-    color: "#666",
+    color: "#808080", // Cinza apagado
     borderTop: "1px solid rgba(255, 255, 255, 0.1)",
   },
   button: {
@@ -352,11 +351,10 @@ const styles = {
     fontSize: "22px",
     fontWeight: "520",
     transition: "0.3s",
-    background: "rgba(255, 255, 255, 0.09)",
-    color: "rgb(255, 255, 255)",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     transform: "scale(1)",
-    color: "rgb(255, 255, 255)",
-    boxShadow: " rgba(123, 31, 162, 0.4) 0px 4px 15px",
+    boxShadow: "0px 4px 15px rgba(253, 184, 19, 0.4)",
     width: "fit-content",
     marginBottom: "0.5rem",
   },

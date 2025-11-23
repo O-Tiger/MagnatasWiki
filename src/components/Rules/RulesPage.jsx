@@ -251,7 +251,7 @@ const styles = {
     padding: "40px 20px",
     maxWidth: "1200px",
     margin: "0 auto",
-    background: "linear-gradient(135deg, #2c3e50 0%, #34495e 100%)",
+    background: "#0a0a0a", // Fundo escuro oficial
     minHeight: "100vh",
     color: "#fff",
   },
@@ -259,9 +259,8 @@ const styles = {
     textAlign: "center",
     marginBottom: "40px",
     padding: "40px",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#1a1a1a", // Cinza escuro
     borderRadius: "15px",
-    backdropFilter: "blur(10px)",
     border: "2px solid rgba(255, 255, 255, 0.1)",
   },
   headerIcon: {
@@ -271,17 +270,17 @@ const styles = {
   title: {
     fontSize: "2.8em",
     marginBottom: "10px",
-    color: "#e74c3c",
-    textShadow: "0 0 20px rgba(231, 76, 60, 0.5)",
+    color: "#FDB813", // Amarelo oficial
+    textShadow: "0 0 20px rgba(253, 184, 19, 0.5)",
   },
   subtitle: {
     fontSize: "1.3em",
-    color: "#ecf0f1",
+    color: "#b0b0b0", // Cinza claro
     opacity: 0.9,
   },
   warningBox: {
-    background: "rgba(231, 76, 60, 0.2)",
-    border: "2px solid #e74c3c",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
+    border: "2px solid #FDB813",
     borderRadius: "12px",
     padding: "25px",
     marginBottom: "40px",
@@ -299,12 +298,12 @@ const styles = {
   warningTitle: {
     fontSize: "1.5em",
     marginBottom: "10px",
-    color: "#e74c3c",
+    color: "#FDB813", // Amarelo
   },
   warningText: {
     lineHeight: "1.7",
     marginBottom: "10px",
-    color: "#ecf0f1",
+    color: "#b0b0b0",
   },
   section: {
     marginBottom: "50px",
@@ -312,18 +311,18 @@ const styles = {
   sectionHeader: {
     marginBottom: "30px",
     padding: "20px",
-    background: "rgba(255, 255, 255, 0.05)",
+    background: "#1a1a1a",
     borderRadius: "10px",
-    borderLeft: "4px solid #3498db",
+    borderLeft: "4px solid #FDB813", // Borda amarela
   },
   sectionTitle: {
     fontSize: "2em",
-    color: "#3498db",
+    color: "#FDB813", // Amarelo
     marginBottom: "10px",
   },
   sectionSubtitle: {
     fontSize: "1.5em",
-    color: "#ecf0f1",
+    color: "#b0b0b0",
     fontWeight: "500",
   },
   rulesGrid: {
@@ -331,7 +330,7 @@ const styles = {
     gap: "15px",
   },
   ruleCard: {
-    background: "rgba(255, 255, 255, 0.08)",
+    background: "#2a2a2a", // Cinza médio
     borderRadius: "10px",
     padding: "20px",
     border: "1px solid rgba(255, 255, 255, 0.1)",
@@ -344,8 +343,8 @@ const styles = {
     gap: "15px",
   },
   ruleNumber: {
-    background: "#3498db",
-    color: "#fff",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     width: "40px",
     height: "40px",
     borderRadius: "50%",
@@ -360,11 +359,11 @@ const styles = {
     flex: 1,
     margin: 0,
     fontSize: "1.1em",
-    color: "#ecf0f1",
+    color: "#fff",
   },
   expandIcon: {
     fontSize: "1.2em",
-    color: "#3498db",
+    color: "#FDB813", // Amarelo
     transition: "transform 0.3s",
   },
   ruleContent: {
@@ -372,14 +371,14 @@ const styles = {
     paddingTop: "15px",
     borderTop: "1px solid rgba(255, 255, 255, 0.1)",
     lineHeight: "1.7",
-    color: "#bdc3c7",
+    color: "#b0b0b0",
   },
   footer: {
     marginTop: "50px",
     padding: "30px",
-    background: "rgba(52, 152, 219, 0.15)",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
     borderRadius: "12px",
-    border: "2px solid #3498db",
+    border: "2px solid #FDB813",
     textAlign: "center",
   },
   footerIcon: {
@@ -389,7 +388,7 @@ const styles = {
   footerText: {
     fontSize: "1.1em",
     lineHeight: "1.8",
-    color: "#ecf0f1",
+    color: "#b0b0b0",
   },
   button: {
     display: "flex",
@@ -402,11 +401,10 @@ const styles = {
     fontSize: "22px",
     fontWeight: "520",
     transition: "0.3s",
-    background: "rgba(255, 255, 255, 0.09)",
-    color: "rgb(255, 255, 255)",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     transform: "scale(1)",
-    color: "rgb(255, 255, 255)",
-    boxShadow: " rgba(123, 31, 162, 0.4) 0px 4px 15px",
+    boxShadow: "0px 4px 15px rgba(253, 184, 19, 0.4)",
     width: "fit-content",
     marginBottom: "0.5rem",
   },

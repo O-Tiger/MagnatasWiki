@@ -81,16 +81,20 @@ const styles = {
     padding: "40px 20px",
     maxWidth: "900px",
     margin: "0 auto",
+    background: "#0a0a0a", // Fundo escuro oficial
+    minHeight: "100vh",
+    color: "#fff",
   },
   title: {
     fontSize: "2.5em",
     marginBottom: "10px",
-    color: "#333",
+    color: "#FDB813", // Amarelo oficial
     textAlign: "center",
+    textShadow: "0 0 20px rgba(253, 184, 19, 0.5)",
   },
   intro: {
     fontSize: "1.2em",
-    color: "#666",
+    color: "#b0b0b0", // Cinza claro
     marginBottom: "50px",
     textAlign: "center",
   },
@@ -104,16 +108,18 @@ const styles = {
     display: "flex",
     gap: "20px",
     padding: "25px",
-    background: "white",
+    background: "#2a2a2a", // Cinza médio
     borderRadius: "12px",
-    boxShadow: "0 4px 6px rgba(0,0,0,0.1)",
+    boxShadow: "0 4px 6px rgba(0,0,0,0.3)",
     alignItems: "flex-start",
+    border: "1px solid rgba(255, 255, 255, 0.1)",
+    transition: "all 0.3s",
   },
   stepNumber: {
     fontSize: "2em",
     fontWeight: "bold",
-    color: "white",
-    background: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+    color: "#000", // Texto preto
+    background: "#FDB813", // Amarelo
     width: "50px",
     height: "50px",
     borderRadius: "50%",
@@ -127,27 +133,30 @@ const styles = {
   },
   stepTitle: {
     fontSize: "1.5em",
-    color: "#333",
+    color: "#fff",
     marginBottom: "8px",
   },
   stepDescription: {
-    color: "#666",
+    color: "#b0b0b0", // Cinza claro
     lineHeight: "1.6",
     fontSize: "1.1em",
   },
   tipsSection: {
-    background: "#e3f2fd",
+    background: "rgba(253, 184, 19, 0.1)", // Amarelo transparente
     padding: "30px",
     borderRadius: "12px",
+    border: "2px solid #FDB813",
   },
   tipsTitle: {
     fontSize: "1.8em",
-    color: "#1976d2",
+    color: "#FDB813", // Amarelo
     marginBottom: "20px",
   },
   tipsList: {
     listStyle: "none",
     padding: 0,
+    color: "#b0b0b0",
+    lineHeight: "2",
   },
   button: {
     display: "flex",
@@ -160,11 +169,10 @@ const styles = {
     fontSize: "22px",
     fontWeight: "520",
     transition: "0.3s",
-    background: "rgba(255, 255, 255, 0.09)",
-    color: "rgb(255, 255, 255)",
+    background: "#FDB813", // Amarelo
+    color: "#000", // Texto preto
     transform: "scale(1)",
-    color: "rgb(255, 255, 255)",
-    boxShadow: " rgba(123, 31, 162, 0.4) 0px 4px 15px",
+    boxShadow: "0px 4px 15px rgba(253, 184, 19, 0.4)",
     width: "fit-content",
     marginBottom: "0.5rem",
   },
